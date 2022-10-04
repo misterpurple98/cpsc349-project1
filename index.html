@@ -2,15 +2,8 @@
 layout: base
 title: Home
 ---
-<header>
-    <h1>{{ title }} </h1>
-</header>
-
-<footer>
-    <hr>
-    <p>
-        <small>
-            <a href="https://www.pexels.com">Photos provided by Pexels</a>
-        </small>
-    </p>
-</footer>
+<div>
+    {% for desk in photos.yyc0lfx.media %}
+        <img src="{{desk.src.tiny}}">
+    {% endfor %}
+</div>
