@@ -1,0 +1,15 @@
+---
+layout: base
+title: Photos
+pagination:
+    data: photos.yyc0lfx.media
+    size: 1
+permalink: "desks/page-{{ pagination.pageNumber }}/index.html"
+---
+
+
+{% for desk in pagination.items -%}
+<h2>Photograph by <a href="{{ desk.photographer_url }}">{{ desk.photographer }}</a></h2>
+<img src="{{ desk.src.large }}" alt="{{ desk.alt }}">
+<h1>{{ desk.alt }}</h1>
+{% endfor -%}
