@@ -4,7 +4,8 @@ title: Photos
 pagination:
     data: photos.yyc0lfx.media
     size: 1
-permalink: "desks/page-{{ pagination.pageNumber }}/index.html"
+    alias: item
+permalink: "desks/page-{{ item.id | slug }}/index.html"
 ---
 
 
