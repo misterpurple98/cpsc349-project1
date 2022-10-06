@@ -4,6 +4,6 @@ title: Home
 ---
 <div>
     {% for desk in photos.yyc0lfx.media %}
-        <img src="{{desk.src.tiny}}" alt="{{desk.alt}}">
+        <a href="/desks/page-{{ desk.id }}/index.html"><img src="{{desk.src.tiny}}" alt="{{desk.alt}}"></a>
     {% endfor %}
 </div>
