@@ -8,10 +8,7 @@ pagination:
 permalink: "desks/page-{{ item.id | slug }}/index.html"
 ---
 
-
 {% for desk in pagination.items -%}
-
-
 <h2>Photograph by <a href="{{ desk.photographer_url }}">{{ desk.photographer }}</a></h2>
 <img src="{{ desk.src.large }}" alt="{{ desk.alt }}">
 <h3 style="color: {{desk.avg_color}}">{{ desk.alt }}</h3>
