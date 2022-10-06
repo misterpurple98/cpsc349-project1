@@ -1,38 +1,41 @@
 ---
 site: CPSC 349 - Fall 2022 - Project 1
 ---
+<!DOCTYPE html>
 
-<head>
-    <title>{{ title }} - {{ site }}</title>
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-</head>
+<html lang="en">
+    <head>
+        <title>{{ title }} - {{ site }}</title>
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <a href="../index.html">
-                Desks
-            </a>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/about/index.html">About Us</a>
-                </li>
-            </ul>
-        </nav>
-        <h1>{{ title }}</h1>
-    </header>
-    <main>
-        {{ content }}
-    </main>
-    <footer>
-        <hr>
-        <p>
-        <small>
-            <a href="https://www.pexels.com">Photos provided by Pexels</a>
-        </small>
-        </p>
-    </footer>
-</body>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">
+                    Desks
+                </a>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about/index.html">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>{{ title }}</h1>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <hr>
+            <p>
+            <small>
+                <a href="https://www.pexels.com">Photos provided by Pexels</a>
+            </small>
+            </p>
+        </footer>
+    </body>
+</html>
